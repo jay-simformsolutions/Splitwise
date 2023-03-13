@@ -16,6 +16,9 @@ class Routes {
   static String createGroup = '/createGroup';
   static String groupExpense = '/groupExpense';
   static String groupInfo = '/groupInfo';
+  static String groupSettleUp = '/groupSettleUp';
+  static String groupBalances = '/groupBalances';
+  static String groupTotalBalance = 'groupTotalBalance';
 
   //Friend Module Route
   static String addFriend = '/addFriend';

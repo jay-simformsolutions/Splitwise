@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:splitwise/Screens/Group/group_expense.dart';
 
 import '../Screens/Activity/activity_page.dart';
 import '../Screens/Friends/add_new_friend.dart';
 import '../Screens/Friends/friends_info.dart';
 import '../Screens/Friends/friends_page.dart';
 import '../Screens/Group/create_new_group.dart';
+import '../Screens/Group/group_info.dart';
 import '../Screens/Group/group_page.dart';
 import '../Screens/Profile/profile_page.dart';
 import '../Screens/bottom_navigation.dart';
-import '../Temp_Data_List/group_page.dart';
 import '../Utils/common_strings.dart';
 
 class RouteGenerator {
@@ -43,6 +44,10 @@ class RouteGenerator {
       case '/groupInfo':
         return MaterialPageRoute(
           builder: (_) => const GroupPageInfo(),
+        );
+      case '/groupExpense':
+        return MaterialPageRoute(
+          builder: (_) => GroupExpenseWidget(groupInfo: args as Map),
         );
       case '/addFriend':
         return MaterialPageRoute(
